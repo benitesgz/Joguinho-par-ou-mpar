@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão para o corpo do documento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    display: flex; /* Usa flexbox para centralizar conteúdo vertical e horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    background-color: #f0f0f0; /* Cor de fundo do corpo */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto e outros elementos filhos */
+}
+
+.titulo {
+    margin-bottom: 20px; /* Margem inferior para separar do próximo elemento */
+}
+
+.jogo {
+    display: none; /* Esconde o conteúdo do jogo inicialmente */
+}
+
+.jogo .jogador, .jogo .robo {
+    display: inline-block; /* Exibe jogador e robô em linha */
+    margin: 0 20px; /* Margem entre jogador e robô */
+}
+
+.controles {
+    margin-top: 20px; /* Margem superior para separar do título */
+}
+
+.modal {
+    display: none; /* Esconde o modal de escolha */
+    margin-top: 20px; /* Margem superior */
+}
+
+.modal h2 {
+    margin-bottom: 10px; /* Margem inferior para separar do próximo elemento */
+}
+
+.modal input,
+.modal button {
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Margem externa */
+}
+
+.resultado {
+    margin-top: 20px; /* Margem superior para separar do modal */
+    font-weight: bold; /* Texto em negrito */
+}

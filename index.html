@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Inclui o arquivo de estilo -->
+    <title>Joguinho Par ou Ímpar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Joguinho Par ou Ímpar</h1> <!-- Título principal do jogo -->
+        </div>
+
+        <div class="jogo">
+            <div class="jogador">
+                <img src="manequim.jfif" alt="Foto do jogador">
+            </div>
+            
+            <div class="robo">
+                <img src="robo.jfif" alt="Foto do robô">
+            </div>
+        </div>
+
+        <div class="controles">
+            <button id="startBtn">Start</button> <!-- Botão para iniciar o jogo -->
+        </div>
+
+        <div class="modal" id="escolhaModal">
+            <h2>Escolha Par ou Ímpar</h2> <!-- Título da seção de escolha -->
+            <input type="text" id="escolhaJogador" placeholder="Digite 'par' ou 'ímpar'"> <!-- Campo para o jogador escolher par ou ímpar -->
+            <input type="number" id="numeroJogador" placeholder="Digite um número"> <!-- Campo para o jogador digitar um número -->
+            <button onclick="avaliarEscolha()">Jogar</button> <!-- Botão para o jogador confirmar a escolha -->
+        </div>
+
+        <div class="resultado" id="resultado"></div> <!-- Div para exibir o resultado do jogo -->
+    </div>
+
+    <script src="codigo.js"></script> <!-- Inclui o arquivo de script JavaScript -->
+</body>
+</html>
